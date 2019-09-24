@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   slack: circleci/slack@0.1.0
   heroku: circleci/heroku@0.0.1
+  lloydwework: lloydwework/hello-world@dev:first
 jobs:
   build:
     docker:
