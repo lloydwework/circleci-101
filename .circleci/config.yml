@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   slack: circleci/slack@0.1.0
   heroku: circleci/heroku@0.0.1
-  lloydwework: lloydwework/hello-world@dev:first
+  lloydwework: lloydwework/hello@dev:first
 jobs:
   build:
     docker:
@@ -12,6 +12,8 @@ jobs:
       - run: echo "A first hello"
       - run: ls -a
       - run: sleep 25
+      - lloydwework/hello:
+          username: "Anna"
 workflows:
   version: 2
   one_and_two:
